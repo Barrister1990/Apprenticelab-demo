@@ -416,18 +416,9 @@ section .title::after{
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
+  margin-bottom: 20px;
 }
-.title2::before
-{
-  content: "";
-  position: absolute;
-  bottom: -389px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
+
 .title1
 {
   position: relative;
@@ -504,7 +495,6 @@ section .title::after{
     color: #0082e6;
     background: none;
 }
-
 /* services section styling */
 .services, .teams{
     color:#111;
