@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Apply.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "tBxOJLzoh_r8gBLZ2",
+            });
+        })();
+    </script>
+     <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                       
+                        window.location.href = 'Confirm.html';
+                        document.getElementById("contact-form").reset();
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="bs-stepper">
+            <div class="bs-stepper-header" role="tablist">
+                <div class="step" data-target="#logins-part">
+                    <button disabled type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="login-part-trigger">
+                        <span class="bs-stepper-circle step-checked-circle">1</span>
+                        <span class="bs-stepper-label step-checked-label">Apply to ApprenticeLab</span>
+                    </button>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-target="#information-part">
+                    <button disabled type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                        <span class="bs-stepper-circle step-unchecked-circle">2</span>
+                        <span class="bs-stepper-label step-unchecked-label test">Complete admission <br class="d-lg-none" /> form and <br class="d-md-none" /> assessment</span>
+                    </button>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-target="#information">
+                    <button disabled type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                        <span class="bs-stepper-circle step-unchecked-circle">3</span>
+                        <span class="bs-stepper-label step-unchecked-label">Start your <br class="d-lg-none" /> Apprentice Lab <br class="d-md-none" /> journey!</span>
+                    </button>
+                </div>
+            </div>
+            <div class="bs-stepper-content">
+                <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger"></div>
+                <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger"></div>
+                <div id="information" class="content" role="tabpanel" aria-labelledby="information-part-trigger"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="text-center">
+                    <img src="image/logo.2.png" class="rounded-circle codetrain-favicon" alt="apprenticelab favicon">
+                </div>
+                <br>
+                <h3 class="text-center">Apply to be an Apprentice</h3>
+                <div></div>
+                <form id="contact-form" class="student-application-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="firstName">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="firstname" placeholder="Enter your first name e.g John" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" class="form-control" name="othername" placeholder="Enter your middle name e.g Bennet">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="lastname" placeholder="Enter your last name e.g Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="phone">Phone <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="location">Location <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="location" placeholder="Enter your location" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="text-danger">*</span> <small>indicates required field</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit application</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

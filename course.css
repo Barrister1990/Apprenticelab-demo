@@ -1,0 +1,19 @@
+#hero {
+    background-image: url('image/Quizzy\ background.png'); /* Add your hero image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    height: 70vh;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.5rem;
+  }
+  

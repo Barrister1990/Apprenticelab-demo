@@ -1,0 +1,256 @@
+.bs-stepper {
+    padding-top: 2rem;
+}
+.bs-stepper-header {
+    display: flex;
+    align-items: center;
+}
+.bs-stepper .step-trigger.disabled, .bs-stepper .step-trigger:disabled {
+    pointer-events: none;
+    opacity: .65;
+}
+.bs-stepper .step-trigger {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #082147;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color .15s ease-out,color .15s ease-out;
+}
+.apply-page .step-checked-circle {
+    background-color: #3F70EF;
+}
+.bs-stepper-circle {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em 0;
+    margin: 0.25rem;
+    line-height: 1em;
+    color: #fff;
+    background-color: #3F70EF;
+    border-radius: 1em;
+}
+.apply-page .step-checked-label {
+    color: #644d8d;
+}
+.bs-stepper-label {
+    display: inline-block;
+    margin: 0.25rem;
+}
+.trigger:disabled {
+    pointer-events: none;
+    opacity: .65;
+}
+.bs-stepper-line, .bs-stepper .line {
+    flex: 1 0 32px;
+    min-width: 1px;
+    min-height: 1px;
+    margin: auto;
+    background-color: rgba(0,0,0,.12);
+}
+.bs-stepper-pane:not(.fade), .bs-stepper .content:not(.fade) {
+    display: none;
+}
+.text-center {
+    text-align: center!important;
+}
+.apply-page .codetrain-favicon {
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid #ddd6e9;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.text-center {
+    text-align: center!important;
+}
+
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.form-row>.col, .form-row>[className*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.text-danger {
+    color: #dc3545!important;
+}
+.form-control {
+    display: block;
+    width: 95%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid blue;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.student-application-form {
+    margin: 2rem 1rem;
+}
+.btn-custom-primary-large {
+    box-shadow: 0 0.3125rem 0.875rem 0.0625rem rgba(0,0,0,.1);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0.3125rem 0.875rem 0.0625rem rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 1rem 0.1rem;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+    background-color: #3F70EF;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+}
+
+ .special-label {
+    display: none;
+    white-space: nowrap;
+}
+.form-control {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .01rem;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-left: 10px;
+    margin-left: 0;
+    background: #fff;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    line-height: 25px;
+    height: 35px;
+    width: 95%;
+    outline: none;
+}
+.confirm{
+    height: 50vh;
+    justify-content: center;
+}
+.btn5 {
+    width: 169px;
+    height: 48px;
+    border: 1px solid #000000;
+    padding: 12px,20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+/* Add this CSS to make the page responsive */
+@media (max-width: 767px) {
+    .bs-stepper {
+      padding-top: 1rem; /* Adjust the padding for smaller screens */
+      width: 100%;
+    }
+    .type {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0; /* Remove any default margin */
+      }
+  
+    .bs-stepper .step-trigger {
+      padding: 10px; /* Adjust the padding for smaller screens */
+      font-size: 0.8rem; /* Decrease the font size for smaller screens */
+    }
+    .bs-stepper-header {
+        display: flex;
+        align-items: center;
+      }
+  
+    .bs-stepper-circle {
+      width: 1.5em; /* Decrease the width for smaller screens */
+      height: 1.5em; /* Decrease the height for smaller screens */
+      padding: 0.25em 0; /* Adjust the padding for smaller screens */
+      margin: 0.1rem; /* Adjust the margin for smaller screens */
+    }
+  
+    .apply-page .codetrain-favicon {
+      height: 4rem; /* Decrease the height for smaller screens */
+      width: 4rem; /* Decrease the width for smaller screens */
+    }
+  }
+  @media (max-width: 947px){
+    .type {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0; /* Remove any default margin */
+      }
+      .bs-stepper-label {
+        display: inline-block;
+        margin: 0.25rem;
+        font-size: 60%;
+      }
+  }
+  .applylink{
+    color: white;
+    text-decoration: none;
+  }
+  .applylink:hover{
+    color: black;
+    text-decoration: none;
+  }
+  .congratulation{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
