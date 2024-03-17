@@ -403,6 +403,31 @@ section .title::after{
     content: "Meet the team";
     
 }
+.title2::after{
+    content: "Our Mission";
+    
+}
+.title2::after
+{
+  position: absolute;
+  left: 50%;
+  font-size: 20px;
+  color: #0082e6;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.title2::before
+{
+  content: "";
+  position: absolute;
+  bottom: -389px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
 .title1
 {
   position: relative;
@@ -436,6 +461,7 @@ section .title::after{
   background: #111;
   transform: translateX(-50%);
 }
+
 
 .about .about-content .left{
     width: 50%;
@@ -574,6 +600,7 @@ section .title::after{
 /*  other services section styling */
 .other-services{
     background-color: #CDACF8;
+    margin-bottom: 50px;
 }
 .other-services, .teams{
     color:#111;
@@ -600,13 +627,13 @@ section .title::after{
 .other-services .services-content .card i{
     font-size: 30px;
     margin-left: 20px;
-    color: #615E83;
+    color: #fff;
 }
 .other-services .services-content .card p{
     color: #ffffff;
 }
 .other-services .services-content .card a{
-    color: #615E83;
+    color: #fff;
     font-weight: bolder;
 }
 
